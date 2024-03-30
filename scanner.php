@@ -1,11 +1,14 @@
 <?php
-// Define the target IP address and port range
-$ip="localhost";
-$start_port = 1;
-$end_port = 1024;
+// INPUT the target IP address and port range
+$ip= readline('Введите ip адрес: ');
+$start_port = readline('Введите начальный порт: ');
+$end_port = readline('Введите конечный порт: ');
 $timeout = 0.01;
+<<<<<<< HEAD
 // warning about begin scan
 print("Начинаем сканирование");
+=======
+>>>>>>> draft2
 // Loop through the port range and check each one
 for ($port = $start_port; $port <= $end_port; $port++) {
  $connection = @fsockopen($ip, $port, $errno, $errstr, $timeout);
@@ -13,5 +16,14 @@ for ($port = $start_port; $port <= $end_port; $port++) {
  echo "Port $port is open\n";
  fclose($connection);
  }
+<<<<<<< HEAD
+ print("Сканирование закончено");
+=======
+ else
+ {
+    echo "Port $port is close\n";
+    fclose($connection); 
+ }
+>>>>>>> draft4
 }
 ?>
