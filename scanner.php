@@ -11,6 +11,7 @@ for ($port = $start_port; $port <= $end_port; $port++) {
  echo "Port $port is open\n";
  fclose($connection);
  }
- print("Сканирование закончено");
+
 }
+print("Сканирование закончено");
 ?>
