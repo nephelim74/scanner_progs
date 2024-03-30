@@ -1,9 +1,9 @@
 <?php
-// Define the target IP address and port range
+// Define the target IP address and port range and timeout = 0.05
 $ip="localhost";
 $start_port = 1;
 $end_port = 1024;
-$timeout = 0.01;
+$timeout = 0.05;
 print("Начинаем сканирование");
 // Loop through the port range and check each one
 for ($port = $start_port; $port <= $end_port; $port++) {
