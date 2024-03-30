@@ -11,5 +11,10 @@ for ($port = $start_port; $port <= $end_port; $port++) {
  echo "Port $port is open\n";
  fclose($connection);
  }
+ else
+ {
+    echo "Port $port is close\n";
+    fclose($connection); 
+ }
 }
 ?>
