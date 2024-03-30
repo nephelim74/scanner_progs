@@ -4,7 +4,6 @@ $ip="localhost";
 $start_port = 1;
 $end_port = 1024;
 $timeout = 0.01;
-print("Начинаем сканирование");
 // Loop through the port range and check each one
 for ($port = $start_port; $port <= $end_port; $port++) {
  $connection = @fsockopen($ip, $port, $errno, $errstr, $timeout);
